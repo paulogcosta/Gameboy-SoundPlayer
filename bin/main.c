@@ -11,7 +11,7 @@ void init() {
 	
 	DISPLAY_ON;		// display on
 	NR52_REG = 0x80;	// sound on
-	NR51_REG = 0x11;	// sound channels on
+	NR51_REG = 0xff;	// sound channels on
 	NR50_REG = 0x77;	// volume max
 }
 
@@ -60,22 +60,28 @@ void play_music_2(){
 }
 
 void play_music_3(){
-	play_note_S1(1,120);
-	play_note_S1(0,100);
-	play_note_S1(0,100);
-	play_note_S1(1,120);
-	play_note_S1(0,100);
-	play_note_S1(0,100);
-	play_note_S1(1,120);
-	play_note_S1(0,100);
-	play_note_S1(13,120);
-	play_note_S1(12,100);
-	play_note_S1(12,100);
-	play_note_S1(13,120);
-	play_note_S1(12,100);
-	play_note_S1(12,100);
-	play_note_S1(13,120);
-	play_note_S1(12,100);
+	play_note_S1(0,40);
+	play_note_S1(1,60);
+	play_note_S1(0,300);
+	play_note_S1(0,200);
+	play_note_S1(0,40);
+	play_note_S1(1,60);
+	play_note_S1(0,300);
+	play_note_S1(0,200);
+	play_note_S1(0,40);
+	play_note_S1(1,60);
+	play_note_S1(0,300);
+	play_note_S1(0,40);
+	play_note_S1(1,60);
+	play_note_S1(0,300);
+	play_note_S1(0,200);
+	play_note_S1(0,40);
+	play_note_S1(1,60);
+	play_note_S1(0,300);
+	play_note_S1(0,200);
+	play_note_S1(0,40);
+	play_note_S1(1,60);
+	play_note_S1(0,300);
 }
 
 void checkInput() {
